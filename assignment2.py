@@ -9,7 +9,15 @@ assert myAverage(1,2,5,6,10) == (4.6,5)
 ```
 
 """
-
+def myAverage(*myList):
+    if not myList:
+        return 0, 0
+    
+    total = sum(myList)
+    count = len(myList)
+    average = total / count
+    
+    return average, count
 
 
 
